@@ -1,0 +1,69 @@
+
+html {
+    padding: 0;
+    font-family: verdana, arial, sans-serif;
+}
+
+body {
+    color: #fff;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 100vh;
+}
+
+header {
+    flex: 0 0 50px;
+
+    padding: 10px;
+    background-color: #37474f;
+}
+
+footer {
+    flex: 0 0 50px;
+    background-color: #37474f;   
+    padding: 10px;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+/*    min-height: 100%; */
+}
+
+.nav-sidebar {
+    flex: 0 1 auto;                     /* Размер бара будет зависеть от контента*/
+    background-color: #455a64;
+    padding: 10px;
+    max-width: 150px;                   /* Ограничиваем максимальную ширину блока*/
+}
+
+article {
+    flex: 3 1 12em;
+    background-color: #546e7a;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.right-sidebar {
+    flex: 0 1 10px;
+    background-color: #455a64;
+    padding: 10px;
+    transition: right .2s;
+    z-index: 2;
+}
+
+
+
+
+
+
+
