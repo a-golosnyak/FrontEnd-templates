@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script>
+        function MoreSayThanks() {          // Если нижнего блока scrypt не будет, это
+            alert('Спасибо ещё раз!');      // событие сработает
+        }
+    </script>
+</head>
+<body>
+
+ 
+    <div class="show-all-comments" id="eventSource" onclick="MoreSayThanks()">Click here</div>
+    <script>
+        function handler1() {
+            alert('Событие отработало');
+        }
+
+        function SayThanks() {
+            alert('Спасибо!');
+        }
+
+        eventSource.onclick = function () {
+            alert("Событие1");
+        }
+
+        eventSource.addEventListener("click", handler1); 
+        eventSource.addEventListener("mouseover ", SayThanks); 
+          
+    </script>
+
+
+</body>
+</html>
