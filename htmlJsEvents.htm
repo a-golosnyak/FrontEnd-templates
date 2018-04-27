@@ -24,11 +24,11 @@
             alert('Спасибо!');
         }
 
-        eventSource.onclick = function () {
+        eventSource.onclick = function () {                 // Так можно повесить одно событие
             alert("Событие1");
         }
 
-        eventSource.addEventListener("click", handler1); 
+        eventSource.addEventListener("click", handler1);    // Так можно добавить много событий
         eventSource.addEventListener("mouseover ", SayThanks); 
           
     </script>
